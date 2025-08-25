@@ -1,15 +1,16 @@
-# LG AI Hackathon: AI Gamers
+# LG AI Hackathon: Resort Menu Prediction
 
-This repository contains code and resources for the [2024 LG AI Hackathon: AI Gamers](https://dacon.io/competitions/official/236559/overview/description) competition hosted on DACON. The goal of this competition is to develop AI models that can predict the next move in a turn-based game, using provided game logs and player information.
+This repository contains code and resources for the [2025 LG AI Hackathon: Resort Menu Prediction](https://dacon.io/competitions/official/236559/overview/description) competition hosted on DACON.  
+The goal of this competition is to develop AI models that can accurately predict the menu choices of resort guests based on their reservation and demographic information.
 
 ---
 
 ## Competition Overview
 
 - **Host:** LG AI Research
-- **Objective:** Predict the next move in a turn-based game based on historical game logs and player data.
-- **Data:** Includes game logs, player statistics, and other relevant features.
-- **Evaluation Metric:** Accuracy of the predicted moves.
+- **Objective:** Predict the menu selection for each guest at a resort using reservation data, guest demographics, and historical menu choices.
+- **Data:** Includes guest reservation records, demographic features, and menu selection logs.
+- **Evaluation Metric:** Accuracy of menu prediction for each guest.
 
 For more details, please refer to the [official competition page](https://dacon.io/competitions/official/236559/overview/description).
 
@@ -22,7 +23,7 @@ lgaimers-repo/
 │
 ├── data/                # Raw and processed datasets
 │   ├── test/
-|   ├── train/
+│   ├── train/
 │   └── processed/
 │
 ├── eda/                 # Exploratory Data Analysis notebooks
@@ -76,7 +77,7 @@ pip install -r models/xgboost_requirements.txt
     ```
 
 2. **Download the competition data**
-    - Place raw data files in the `data/raw/` directory.
+    - Place raw data files in the `data/train/` and `data/test/` directories.
 
 3. **Set up your environment**
     - Install the requirements for the model you want to use (see above).
