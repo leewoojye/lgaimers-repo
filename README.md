@@ -21,7 +21,8 @@ For more details, please refer to the [official competition page](https://dacon.
 lgaimers-repo/
 │
 ├── data/                # Raw and processed datasets
-│   ├── raw/
+│   ├── test/
+|   ├── train/
 │   └── processed/
 │
 ├── eda/                 # Exploratory Data Analysis notebooks
